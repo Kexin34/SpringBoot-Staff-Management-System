@@ -22,11 +22,11 @@ public class EmployeeDao {
 
     static {
         employees = new HashMap<Integer, Employee>();//创建一个员工表
-        employees.put(1, new Employee(1, "zsr", "1234@qq.com", 1, new Department(1, "技术部"), new Date()));
-        employees.put(2, new Employee(2, "lyr", "1345@qq.com", 1, new Department(2, "市场部"), new Date()));
-        employees.put(3, new Employee(3, "gcc", "5665@qq.com", 0, new Department(3, "调研部"), new Date()));
-        employees.put(4, new Employee(4, "zyx", "7688@qq.com", 1, new Department(4, "后勤部"), new Date()));
-        employees.put(5, new Employee(5, "zch", "8089@qq.com", 1, new Department(5, "运营部"), new Date()));
+        employees.put(1, new Employee(1, "zsr", "1234@qq.com", 1, new Department(1, "技术部")));
+        employees.put(2, new Employee(2, "lyr", "1345@qq.com", 1, new Department(2, "市场部")));
+        employees.put(3, new Employee(3, "gcc", "5665@qq.com", 0, new Department(3, "调研部")));
+        employees.put(4, new Employee(4, "zyx", "7688@qq.com", 1, new Department(4, "后勤部")));
+        employees.put(5, new Employee(5, "zch", "8089@qq.com", 1, new Department(5, "运营部")));
     }
 
     //主键自增
@@ -46,7 +46,7 @@ public class EmployeeDao {
     }
 
     //通过id查询员工
-    public Employee getEmployeeByID(Integer id) {
+    public Employee getEmployeeById(Integer id) {
         return employees.get(id);
     }
 
